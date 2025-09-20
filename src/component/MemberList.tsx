@@ -28,9 +28,8 @@ export default function MemberList({ members, onEdit, onDelete }: MemberListProp
             <p><span className="font-semibold">จังหวัด:</span> {member.province || "-"}</p>
             <p><span className="font-semibold">ตำแหน่ง:</span> {member.position || "-"}</p>
             <p><span className="font-semibold">กระทรวง:</span> {member.ministry || "-"}</p>
-            {member.workHistory && (
-              <p><span className="font-semibold">ประวัติการทำงาน:</span> {member.workHistory}</p>
-            )}
+            <p><span className="font-semibold">ประวัติการทำงาน:</span> {member.workHistory || "-"}</p>
+            <p><span className="font-semibold">ผลงานที่ผ่านมา:</span> {member.achievements || "-"}</p>
           </div>
 
           {/* ปุ่มแก้ไข/ลบ */}
